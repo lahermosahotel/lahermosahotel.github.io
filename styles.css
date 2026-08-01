@@ -141,9 +141,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center;
   padding: 128px 20px 64px;
   background:
-    radial-gradient(1100px 640px at 50% -10%, rgba(0,0,0,.05), transparent 60%),
-    repeating-linear-gradient(0deg, rgba(0,0,0,.02) 0px, rgba(0,0,0,.02) 1px, transparent 1px, transparent 3px),
-    #E7E6E3;
+    radial-gradient(1100px 640px at 50% -10%, rgba(255,255,255,.05), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0px, rgba(255,255,255,.02) 1px, transparent 1px, transparent 3px),
+    #3A3A38;
 }
 .hero__plate {
   position: relative; width: 100%; max-width: 620px;
@@ -238,6 +238,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 14px; margin-top: 36px;
 }
 .gallery__item--wide { grid-column: span 2; }
+.gallery__item--tall { grid-row: span 2; }
 @media (max-width: 720px) {
   .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
   .gallery__item--wide { grid-column: span 2; }
