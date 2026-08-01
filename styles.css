@@ -138,15 +138,17 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: var(--gold); margin-bottom: 14px;
 }
 .hero {
-  position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center;
-  padding: 128px 20px 64px;
-  background:
-    radial-gradient(1100px 640px at 50% -10%, rgba(255,255,255,.15), transparent 60%),
-    repeating-linear-gradient(0deg, rgba(34,28,20,.03) 0px, rgba(34,28,20,.03) 1px, transparent 1px, transparent 3px),
-    #BEBAB2;
+  position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: flex-end;
+  padding: 128px 7vw 64px; overflow: hidden;
+}
+.hero__bg.photo { position: absolute; inset: 0; aspect-ratio: auto; box-shadow: none; border-radius: 0; }
+.hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.hero__scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(20,16,10,.35) 0%, rgba(20,16,10,.15) 40%, rgba(20,16,10,.55) 100%);
 }
 .hero__plate {
-  position: relative; width: 100%; max-width: 620px;
+  position: relative; z-index: 2; width: 100%; max-width: 480px;
   background: var(--panel); border: 1.5px solid var(--brass); border-radius: 4px;
   padding: 48px 42px 40px; text-align: center;
   box-shadow: 0 50px 90px -40px rgba(34,28,20,.4), inset 0 2px 0 rgba(255,255,255,.35);
@@ -185,6 +187,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 .hero__meta-item + .hero__meta-item { border-left: 1px solid var(--line); }
 .hero__meta-item svg { width: 22px; height: 22px; stroke: var(--brass); fill: none; stroke-width: 1.4; }
 
+@media (max-width: 860px) {
+  .hero { justify-content: center; padding-left: 6vw; padding-right: 6vw; }
+}
 @media (max-width: 560px) {
   .hero { padding-top: 108px; }
   .hero__plate { padding: 38px 24px 32px; }
