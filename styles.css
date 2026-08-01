@@ -18,6 +18,8 @@
   --navy: #1C3A5E;
   --teal: #2C4A47;
   --brass: #9C7A3C;
+  --parchment: #F1E7D4;
+  --panel: #EAD9B8;
   --cream: #FBF3E7;
   --paper: #FFFFFF;
   --ink: #221C14;
@@ -139,15 +141,15 @@ ul { list-style: none; margin: 0; padding: 0; }
   position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center;
   padding: 128px 20px 64px;
   background:
-    radial-gradient(1100px 640px at 50% -10%, rgba(156,122,60,.14), transparent 60%),
-    repeating-linear-gradient(0deg, rgba(34,28,20,.025) 0px, rgba(34,28,20,.025) 1px, transparent 1px, transparent 3px),
-    var(--cream);
+    radial-gradient(1100px 640px at 50% -10%, rgba(156,122,60,.22), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(34,28,20,.035) 0px, rgba(34,28,20,.035) 1px, transparent 1px, transparent 3px),
+    var(--parchment);
 }
 .hero__plate {
   position: relative; width: 100%; max-width: 620px;
-  background: var(--paper); border: 1.5px solid var(--brass); border-radius: 4px;
+  background: var(--panel); border: 1.5px solid var(--brass); border-radius: 4px;
   padding: 48px 42px 40px; text-align: center;
-  box-shadow: 0 50px 90px -40px rgba(34,28,20,.35);
+  box-shadow: 0 50px 90px -40px rgba(34,28,20,.4), inset 0 2px 0 rgba(255,255,255,.35);
 }
 .hero__plate::before {
   content: ""; position: absolute; inset: 9px; border: 1px solid var(--brass); opacity: .55; pointer-events: none;
