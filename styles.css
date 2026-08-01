@@ -141,9 +141,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center;
   padding: 128px 20px 64px;
   background:
-    radial-gradient(1100px 640px at 50% -10%, rgba(156,122,60,.22), transparent 60%),
-    repeating-linear-gradient(0deg, rgba(34,28,20,.035) 0px, rgba(34,28,20,.035) 1px, transparent 1px, transparent 3px),
-    var(--parchment);
+    radial-gradient(1100px 640px at 50% -10%, rgba(0,0,0,.05), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.02) 0px, rgba(0,0,0,.02) 1px, transparent 1px, transparent 3px),
+    #E7E6E3;
 }
 .hero__plate {
   position: relative; width: 100%; max-width: 620px;
