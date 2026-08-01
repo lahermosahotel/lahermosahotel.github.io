@@ -43,26 +43,53 @@
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <div class="hero__media photo" data-caption="Fachada">
-      <img src="assets/img/fachada.jpg" alt="Fachada del Hotel La Hermosa" onerror="this.closest('.photo').classList.add('photo--missing');this.remove();">
-      <span class="photo__missing-label">Foto pendiente<br><code>assets/img/fachada.jpg</code></span>
-    </div>
-    <div class="hero__scrim"></div>
-    <div class="hero__content">
+    <div class="hero__plate">
+
+      <svg class="hero__crest reveal" width="86" height="92" viewBox="0 0 86 92" aria-hidden="true">
+        <polyline points="8,20 21,7 34,20 43,11 52,20 65,7 78,20" fill="none" stroke="#9C7A3C" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+        <line x1="8" y1="20" x2="78" y2="20" stroke="#9C7A3C" stroke-width="1.6"/>
+        <rect x="14" y="22" width="7" height="46" fill="none" stroke="#9C7A3C" stroke-width="1.4"/>
+        <rect x="65" y="22" width="7" height="46" fill="none" stroke="#9C7A3C" stroke-width="1.4"/>
+        <path d="M28 68 V44 A15 15 0 0 1 58 44 V68 Z" fill="none" stroke="#221C14" stroke-width="1.6"/>
+        <path d="M28 44 A15 15 0 0 1 58 44" fill="none" stroke="#9C7A3C" stroke-width="1"/>
+        <line x1="43" y1="29" x2="43" y2="44" stroke="#9C7A3C" stroke-width="1"/>
+        <line x1="33.5" y1="32.5" x2="40" y2="44" stroke="#9C7A3C" stroke-width="1"/>
+        <line x1="52.5" y1="32.5" x2="46" y2="44" stroke="#9C7A3C" stroke-width="1"/>
+        <rect x="32" y="50" width="10" height="18" rx="1" fill="none" stroke="#221C14" stroke-width="1.1"/>
+        <rect x="44" y="50" width="10" height="18" rx="1" fill="none" stroke="#221C14" stroke-width="1.1"/>
+        <line x1="20" y1="68" x2="66" y2="68" stroke="#221C14" stroke-width="1.6"/>
+        <line x1="17" y1="72" x2="69" y2="72" stroke="#9C7A3C" stroke-width="1.2"/>
+        <line x1="14" y1="76" x2="72" y2="76" stroke="#9C7A3C" stroke-width="1"/>
+      </svg>
+
       <p class="eyebrow reveal">Hotel</p>
-      <h1 class="hero__title reveal">Hotel La Hermosa</h1>
+      <h1 class="hero__title reveal">Hotel <em>La Hermosa</em></h1>
+      <p class="hero__locale reveal">Centro Histórico &middot; Guadalajara de Buga</p>
+
+      <div class="hero__divider reveal"><span class="hero__divider-line"></span><span class="hero__divider-mark" aria-hidden="true">&#10023;</span><span class="hero__divider-line"></span></div>
+
       <p class="hero__subtitle reveal">Habitaciones cómodas y coloridas, a pocos pasos de todo, con la calidez de un hotel familiar.</p>
+
       <div class="hero__actions reveal">
         <a href="#reservas" class="btn btn--primary">Reservar ahora</a>
         <a href="#habitaciones" class="btn btn--ghost">Ver habitaciones</a>
       </div>
+
       <div class="hero__meta reveal">
-        <span>Wi-Fi gratis</span>
-        <span aria-hidden="true">·</span>
-        <span>Parqueadero cubierto</span>
-        <span aria-hidden="true">·</span>
-        <span>Aire acondicionado</span>
+        <div class="hero__meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5c5.5-5 14.5-5 20 0M5.5 12c3.7-3.3 9.3-3.3 13 0M9 15.5c1.9-1.7 4.1-1.7 6 0"/><circle cx="12" cy="19" r="1"/></svg>
+          <span>Wi-Fi gratis</span>
+        </div>
+        <div class="hero__meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 8h4a2.5 2.5 0 0 1 0 5H9V8Zm0 5v4"/></svg>
+          <span>Parqueadero cubierto</span>
+        </div>
+        <div class="hero__meta-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+          <span>Aire acondicionado</span>
+        </div>
       </div>
+
     </div>
   </section>
 
